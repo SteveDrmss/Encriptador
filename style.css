@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --color-primario: #0A3871;
+    --color-secundario: #D8DFE8;
+    --color-terciario: #F6F6F6;
+    
+   
+    --fuente-inter: "Inter", sans-serif;
+   
+}
+
+* {
+    background-color: var(--color-terciario);
+    line-height: 150%;
+}
+
+.logo{
+    padding: 3% 0 0 5%;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.main__texto{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0 0 2%;
+}
+
+.main__insert__text{
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--color-primario);
+    border: none;
+    outline: none;
+    background-color: var(--color-terciario);
+    overflow: hidden;
+    resize: none;
+
+}
+
+::placeholder{
+    color: #0A3871;
+}
+
+.botones__texto{
+    color: #495057;
+    font-family: var(--fuente-inter);
+    font-size: 12px;
+    padding-top: 15px;
+    display: flex;
+    gap: 7px;
+    
+}
+
+.botones{
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+    padding-top: 15px;
+  
+}
+
+.botones__texto__b1{
+    width: 50%;
+    background-color: var(--color-primario);
+    padding: 20px 0px;
+    border-radius: 25px;
+    color: var(--color-terciario);
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+    border: 2px, solid, var(--color-primario);
+    cursor: pointer;
+    background-color: var(--color-primario);
+    transition: background-color 0.5s;
+}
+.botones__texto__b2{
+    width: 50%;
+    background-color: var(--color-secundario);
+    padding: 20px 0px;
+    border-radius: 25px;
+    color: var(--color-primario);
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+    border: 2px, solid, var(--color-primario);
+    cursor: pointer;
+    background-color: var(--color-secundario); 
+    transition: background-color 0.5s;
+
+}
+
+.botones__texto__b1:hover{
+    background-color:rgb(55, 134, 253);
+}
+.botones__texto__b2:hover{
+    background-color:#93a5b4;
+}
+
+
+
+
+.mensaje{
+    background-color: var(--color-terciario);
+    font-size: 24px;
+    border:none;
+    color: var(--color-primario);
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 2rem 2rem;
+    margin-right: 1rem;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    text-align: center;
+    resize: none;
+    margin: 0 auto;
+    padding: 1rem;
+    
+    
+    
+}
+
+.copiarbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copiar{
+    width: 60%;
+    background-color: var(--color-secundario);
+    padding: 20px 0px;
+    border-radius: 25px;
+    color: var(--color-primario);
+    font-family: var(--fuente-inter);
+    font-size: 16px;
+    border: 2px, solid, var(--color-primario); 
+    margin-top: 23px;
+    cursor: pointer;
+    background-color: var(--color-secundario); 
+    transition: background-color 0.5s;
+}
+
+.copiar:hover{
+    background-color:#93a5b4
+}
+
+
+
+@media (max-width: 1200px){
+
+    .main{
+      flex-direction: column;
+      align-items: center;
+      padding: 10%;
+    }
+
+    .logo{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .main__insert__text{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .botones{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 1rem; 
+    }
+
+
+    .mensaje{
+        width: 100%;
+        margin-top: 1rem
+    }
+
+   
+
+
+}

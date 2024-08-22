@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/Logo.png" alt="Logo de Alura" class="logo">
+    </header>
+    
+    <main class="main">
+        <section class="main__texto">
+            <textarea class="main__insert__text" name="texto" id="texto" rows="9" cols="35" placeholder="Ingrese el texto aquí..."></textarea>
+
+            <div>
+            <p class="botones__texto"> <img src="assets/icon exclamation-circle-fill.png" alt="icono de exclamacion">Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="botones"> 
+                <button class="botones__texto__b1" type="button">Encriptar</button>
+                <button class="botones__texto__b2" type="button">Desencriptar</button>
+            </div>
+        </section>
+
+        <section>
+            <textarea class="mensaje" cols="25" rows="13"></textarea>
+
+            <div class="copiarbtn">
+                <button class="copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
